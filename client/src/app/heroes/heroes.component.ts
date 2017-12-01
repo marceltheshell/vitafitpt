@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HEROES } from '../mock-heros';
+import { HeroFetchService } from '../hero-fetch.service.ts';
 
 @Component({
   selector: 'app-heroes',
@@ -8,23 +8,21 @@ import { HEROES } from '../mock-heros';
 })
 export class HeroesComponent implements OnInit {
 
-  person = {
-    name: "", 
-    type: ""
+  selectedHero: Hero;
+
+  heroes: Hero[];
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
   }
 
-  // selectedHero: Hero;
+  getHeroes(): void {
+    this.heroes = this.heroFetchService.getHeroes()
+  }
 
-  // onSelect(hero: Hero): void {
-  //   this.selectedHero = hero;
-  // }
-
-  heroes: Hero[] = HEROES;
-
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
-
   }
 
 }
