@@ -1,3 +1,10 @@
-<p>
-  blog works!
-</p>
+<h2>Blog Posts</h2>
+<div *ngIf="selectedBlogPost">
+  <h1>{{selectedBlogPost.title}}</h1>
+</div>
+  <ul>
+    <li *ngFor="let mockBlogPost of mockBlogPosts"
+        (click)="onSelect(mockBlogPost)">
+      <span>{{mockBlogPost.title}}</span>
+    </li>
+  </ul>

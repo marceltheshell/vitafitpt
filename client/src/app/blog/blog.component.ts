@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MOCKBLOGPOSTS } from '../blog-posts.ts';
+import { BlogPost } from '../models/blogPost.ts';
 
 @Component({
   selector: 'app-blog',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  mockBlogPosts = MOCKBLOGPOSTS;
 
-  ngOnInit() {
-  }
+  selectedBlogPost: BlogPost;
+
+  onSelect = function(mockBlogPost: BlogPost): void {
+    this.selectedBlogPost = mockBlogPost;
+  }; 
+
+  constructor() {}
+
+  ngOnInit() {}
 
 }
