@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MOCKBLOGPOSTS } from '../blog-posts.ts';
-import { BlogPost } from '../models/blogPost.ts';
+import { MOCKBLOGPOSTS } from '../blog-posts';
+import { BlogPost } from '../models/blogPost';
 
 @Component({
   selector: 'app-blog',
