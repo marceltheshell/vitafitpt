@@ -1,6 +1,12 @@
 /* Application-wide Styles */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+.no-margin-top-bottom {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .clearfix {
   *zoom: 1;
 }
@@ -76,7 +82,7 @@ a:focus {
   margin-top: -1px;
   min-width: 180px;
 }
-body > section {
+body section {
   padding: 50px 0;
 }
 .turquoise,
@@ -1108,19 +1114,21 @@ ul.faq li > div h3 {
 }
 
 .main-section.contact{
-  background:url(./assets/images/bg.jpg) left 190px no-repeat;
+  // background:url(./assets/images/bg.jpg) left 190px no-repeat;
 }
 .contact-info-box{
   font-size:15px;
-  margin:0 0 14px 68px;
+  margin:33px 0 14px 68px;
   padding-left:0;
+}
+.contact-box-margin-bottom{
+  margin-bottom: 52px;
 }
 .contact-info-box h3{
   font-size: 15px;
   font-weight:400;
   float:left;
-  width:102px;
-  margin-right:12px;
+  // margin-right:12px;
   line-height:28px;
 }
 .contact-info-box h3 i{
