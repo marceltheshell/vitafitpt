@@ -82,7 +82,7 @@ a:focus {
   margin-top: -1px;
   min-width: 180px;
 }
-body section {
+body  section {
   padding: 50px 0;
 }
 .turquoise,
@@ -332,24 +332,24 @@ body section {
 #main-slider {
   position: relative;
 }
-#main-slider .carousel h2 {
+#main-slider.carousel h2 {
   font-size: 36px;
 }
-#main-slider .carousel .btn {
+#main-slider.carousel .btn {
   border: 3px solid rgba(255, 255, 255, 0.5);
   color: #fff;
   border-radius: 0;
   margin-top: 5px;
 }
-#main-slider .carousel .btn:hover {
+#main-slider.carousel .btn:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-#main-slider .carousel .boxed {
+#main-slider.carousel .boxed {
   padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.8);
   display: inline-block;
 }
-#main-slider .carousel .item {
+#main-slider.carousel .item {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -360,16 +360,16 @@ body section {
   width: 100%;
   display: block !important;
   height: 800px;
-  -webkit-transition: opacity ease-in-out 500ms;
+  /*-webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
-  transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;*/
 }
-#main-slider .carousel .item:first-child {
+#main-slider.carousel .item:first-child {
   top: auto;
   position: relative;
 }
-#main-slider .carousel .item.active {
+#main-slider.carousel .item.active {
   opacity: 1;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
@@ -739,7 +739,7 @@ ul.tag-cloud li {
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 4px;
-  color: #19AD4C; 
+  color: #19AD4C;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -1208,7 +1208,7 @@ ul.faq li > div h3 {
   border: 1px solid #7cc576;
   outline:0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);  
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
 }
 

@@ -1,11 +1,11 @@
-<section id="main-slider" class="no-margin">
-    <div class="carousel slide wet-asphalt">
+<section class="no-margin">
+    <div id="main-slider" class="carousel slide wet-asphalt no-margin" data-interval="5000" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#main-slider" data-slide-to="0" class="active"></li>
             <li data-target="#main-slider" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="item active" style="background-image: url(/assets/images/small-logo.jpg)">
+            <div class="item active" id="bg1" style="background-image: url(/assets/images/slider/bg1.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div><!--/.item-->
-            <div class="item" style="background-image: url(/assets/images/slider/bg2.jpg)">
+            <div class="item" id="bg2" style="background-image: url(/assets/images/slider/bg2.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
@@ -47,13 +47,13 @@
                 </div>
             </div><!--/.item-->
         </div><!--/.carousel-inner-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
     </div><!--/.carousel-->
-    <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-        <i class="fa fa-angle-left"></i>
-    </a>
-    <a class="next hidden-xs" href="#main-slider" data-slide="next">
-        <i class="fa fa-angle-right"></i>
-    </a>
 </section><!--/#main-slider-->
 
 <section id="about"> <!-- about -->
@@ -79,7 +79,7 @@
             </p>
 
             </div>
-            
+
         </div>
     </div>
     <div class="container">
@@ -169,14 +169,14 @@
             <p style="font-size:1.2em;">
             <i class="fa fa-question-circle" aria-hidden="true" style="color: #4D3581;"></i> Tired of one-size-fits-all approaches to dieting?
             <i class="fa fa-question-circle" aria-hidden="true" style="color: #4D3581;"></i> Drained from toxic relationships?
-            <i class="fa fa-question-circle" aria-hidden="true" style="color: #4D3581;"></i> Overwhelmed by stress at work? 
+            <i class="fa fa-question-circle" aria-hidden="true" style="color: #4D3581;"></i> Overwhelmed by stress at work?
             <i class="fa fa-question-circle" aria-hidden="true" style="color: #4D3581;"></i> Fed up with those nagging cravings?
             <i class="fa fa-question-circle" aria-hidden="true" style="color: #4D3581;"></i> Want to feel great in your body?
             <i class="fa fa-question-circle" aria-hidden="true" style="color: #4D3581;"></i> Ready to accomplish your goals in a way that’s empowering and exciting?
 
-            An Integrative Fitness and Health Coach is a guide and mentor who empowers you and provides ongoing support and guidance as you set goals and make sustainable changes that improve your health and happiness. 
+            An Integrative Fitness and Health Coach is a guide and mentor who empowers you and provides ongoing support and guidance as you set goals and make sustainable changes that improve your health and happiness.
             As your Health Coach, I will listen carefully and we’ll navigate the world of contradictory fitness, nutrition and health advice together to explore what truly works for you.
-             
+
             <strong>Together we will:</strong>
             <i class="fa fa-check" aria-hidden="true" style="color: #2ECC71;"></i> Connect the dots between who you are and who you want to be
             <i class="fa fa-check" aria-hidden="true" style="color: #2ECC71;"></i> Create your personal blueprint
@@ -184,7 +184,7 @@
             <i class="fa fa-check" aria-hidden="true" style="color: #2ECC71;"></i> Set your personal goals and work towards sustainable change
 
 
-            To decide if health coaching is right for you, I invite you to schedule a free initial consultation with me. 
+            To decide if health coaching is right for you, I invite you to schedule a free initial consultation with me.
             During this session, we will discuss your health and lifestyle to determine how I can best support you in achieving your goals.
 
             What are you waiting for? <strong>Let's do this! </strong>
@@ -203,9 +203,9 @@
                 <img src="/assets/images/portfolio/thumb/m1.jpg" alt="">
                 <h5></h5>
                 <div class="overlay">
-                    <a class="preview btn btn-danger" href="images/portfolio/full/m1.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>             
-                </div>           
-            </div>           
+                    <a class="preview btn btn-danger" href="images/portfolio/full/m1.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>
+                </div>
+            </div>
         </li><!--/.portfolio-item-->
 
         <li class="portfolio-item">
@@ -213,9 +213,9 @@
                 <img src="/assets/images/portfolio/thumb/m2.jpg" alt="">
                 <h5></h5>
                 <div class="overlay">
-                    <a class="preview btn btn-danger" href="images/portfolio/full/m2.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>             
-                </div>           
-            </div>           
+                    <a class="preview btn btn-danger" href="images/portfolio/full/m2.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>
+                </div>
+            </div>
         </li><!--/.portfolio-item-->
 
         <li class="portfolio-item">
@@ -223,9 +223,9 @@
                 <img src="/assets/images/portfolio/thumb/item1.jpg" alt="">
                 <h5></h5>
                 <div class="overlay">
-                    <a class="preview btn btn-danger" href="images/portfolio/full/item1.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>             
-                </div>           
-            </div>           
+                    <a class="preview btn btn-danger" href="images/portfolio/full/item1.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>
+                </div>
+            </div>
         </li><!--/.portfolio-item-->
 
         <li class="portfolio-item">
@@ -233,9 +233,9 @@
                 <img src="/assets/images/portfolio/thumb/item2.jpg" alt="">
                 <h5></h5>
                 <div class="overlay">
-                    <a class="preview btn btn-danger" href="images/portfolio/full/item2.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>             
-                </div>           
-            </div>           
+                    <a class="preview btn btn-danger" href="images/portfolio/full/item2.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>
+                </div>
+            </div>
         </li><!--/.portfolio-item-->
 
         <li class="portfolio-item">
@@ -243,9 +243,9 @@
                 <img src="/assets/images/portfolio/thumb/item3.jpg" alt="">
                 <h5></h5>
                 <div class="overlay">
-                    <a class="preview btn btn-danger" href="images/portfolio/full/item3.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>             
-                </div>           
-            </div>           
+                    <a class="preview btn btn-danger" href="images/portfolio/full/item3.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>
+                </div>
+            </div>
         </li><!--/.portfolio-item-->
 
         <li class="portfolio-item">
@@ -253,9 +253,9 @@
                 <img src="/assets/images/portfolio/thumb/item4.jpg" alt="">
                 <h5></h5>
                 <div class="overlay">
-                    <a class="preview btn btn-danger" href="images/portfolio/full/item4.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>             
-                </div>           
-            </div>           
+                    <a class="preview btn btn-danger" href="images/portfolio/full/item4.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>
+                </div>
+            </div>
         </li><!--/.portfolio-item-->
 
         <li class="portfolio-item">
@@ -263,9 +263,9 @@
                 <img src="/assets/images/portfolio/thumb/item5.jpg" alt="">
                 <h5></h5>
                 <div class="overlay">
-                    <a class="preview btn btn-danger" href="images/portfolio/full/item5.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>             
-                </div>           
-            </div>           
+                    <a class="preview btn btn-danger" href="images/portfolio/full/item5.jpg" rel="prettyPhoto" style="background-color:#4D3581; border-color:#4D3581;"><i class="fa fa-search-plus"></i></a>
+                </div>
+            </div>
         </li><!--/.portfolio-item-->
 
     </ul>
@@ -278,7 +278,7 @@
             <p class="lead">
 
             </p>
-        </div><!--/.center-->   
+        </div><!--/.center-->
         <div class="gap"></div>
         <div id="pricing-table" class="row">
             <div class="col-md-3 col-xs-6">
@@ -345,7 +345,7 @@
                     </li>
                 </ul>
             </div><!--/.col-md-3-->
-        </div> 
+        </div>
     </div>
 </section><!--trainging/#pricing-->
 
@@ -401,4 +401,3 @@
         </div>
     </section>
 </div>
-
