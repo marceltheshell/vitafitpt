@@ -11,6 +11,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { PlansComponent } from './plans/plans.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HttpClientService } from './http-client-service/http-client.service';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -40,7 +41,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ HttpClientService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
