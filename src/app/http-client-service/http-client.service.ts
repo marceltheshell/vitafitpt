@@ -7,6 +7,10 @@ export class HttpClientService {
     'Ford','Chevrolet','Buick'
   ];
 
+  myData() {
+    return 'This is my data, man!';
+  }
+
   constructor() { }
 
 }
