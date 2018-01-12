@@ -43,9 +43,8 @@ export class BlogComponent implements OnInit {
   getBlogs(): void {
     this.httpClientService.getAllBlogs().subscribe(
       data => { this.blogPosts = data }, 
-      err => console.error(err), 
-      () => console.log("done loading blogs");
-    ); 
+      err => console.error(err)
+    )
   }
 
 

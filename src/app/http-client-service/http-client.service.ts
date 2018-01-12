@@ -23,27 +23,22 @@ export class HttpClientService {
   }
 
   public getBlog(blogId: number): Observable<Blog> {
-    this.http.get(API_URL + '/blog/' + blogId).subscribe(data => {
-      console.log("the data is" + data);
-    });
+    return this.http.get(API_URL + '/blog/' + blogId);
   }
 
   public createBlog(blog: Blog): Observable<Blog> {
-    this.http.post(API_URL + '/blog/' + blogId).subscribe(data => {
-      console.log("the data is" + data);
-    });
-    // will use this.http.post()
+    let body = JSON.stringify(blog);
+    return this.http.post(API_URL + '/blog/', body, httpOptions);
   }
 
   public updateBlog(blog: Blog): Observable<Blog> {
-    // will use this.http.put()
+    let body = JSON.stringify(blog);
+    return this.http.put(API_URL + '/blog/' + blog.id, body, httpOptions);
   }
 
   public deleteBlog(blog: Blog): Observable<Blog> {
-    // will use this.http.delete()
+    return this.http.delete(API_URL + '/blog/' + blog.id);
   }
-
-
 
 }
 
