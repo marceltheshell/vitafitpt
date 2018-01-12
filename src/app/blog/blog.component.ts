@@ -10,6 +10,13 @@ import { HttpClientService } from '../http-client-service/http-client.service';
 })
 export class BlogComponent implements OnInit {
 
+  ///////////////// api variables
+  public blogPosts;
+
+
+
+  /////////////////
+
   mockBlogPosts = MOCKBLOGPOSTS;
 
   selectedBlogPost: BlogPost;
@@ -18,7 +25,7 @@ export class BlogComponent implements OnInit {
     this.selectedBlogPost = mockBlogPost;
   }; 
 
-  constructor(private httpClientService: HttpClientService) { }
+  constructor(private httpClientService: HttpClientService) {}
 
   ngOnInit() {
 
@@ -30,9 +37,16 @@ export class BlogComponent implements OnInit {
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-
-    console.log(this.httpClientService.cars);
-
+    this.getBlogs();
   }
+
+  getBlogs(): void {
+    this.httpClientService.getAllBlogs().subscribe(
+      data => { this.blogPosts = data }, 
+      err => console.error(err), 
+      () => console.log("done loading blogs");
+    ); 
+  }
+
 
 }

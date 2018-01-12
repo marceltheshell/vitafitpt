@@ -39,18 +39,18 @@
         </div>
         <div class="col-sm-8 col-sm-pull-4">
             <ul>
-                <li *ngFor="let mockBlogPost of mockBlogPosts">
+                <li *ngFor="let blogPost of blogPosts">
                     <div class="blog">
                         <div class="blog-item">
                             <!-- <img class="img-responsive img-blog" width="100%" alt="" /> blog image here -->
                             <div class="blog-content">
-                                <a><h3>{{ mockBlogPost.title }}</h3></a>
+                                <a><h3>{{ blogPost.title }}</h3></a>
                                 <div class="entry-meta">
-                                    <span><i class="fa fa-calendar"></i> {{ mockBlogPost.date }}</span>
-                                    <span><i class="fa fa-eye"></i>{{ mockBlogPost.views }}</span>
+                                    <span><i class="fa fa-calendar"></i> {{ blogPost.date }}</span>
+                                    <span><i class="fa fa-eye"></i>{{ blogPost.views }}</span>
                                 </div>
-                                <p>{{ mockBlogPost.content }}</p>
-                                <a class="btn btn-default" (click)="onSelect(mockBlogPost)" >Read More <i class="icon-angle-right"></i></a>
+                                <p>{{ blogPost.content }}</p>
+                                <a class="btn btn-default" (click)="onSelect(blogPost)" >Read More <i class="icon-angle-right"></i></a>
                             </div>
                         </div><!--/.blog-item-->
                     </div>
