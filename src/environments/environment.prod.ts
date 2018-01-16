@@ -1,5 +1,4 @@
 export const environment = {
-  production: true
-  // URL of production API
+  production: true,
   apiUrl: 'https://vitafitapi.herokuapp.com/api'
 };

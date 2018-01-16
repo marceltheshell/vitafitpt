@@ -17,28 +17,31 @@ export class HttpClientService {
 
   constructor(private http: HttpClient) {}
 
+  public getAllContacts(): any {
+    return this.http.get(API_URL + '/contact/')
+  }
 
   public getAllBlogs(): any {
     return this.http.get(API_URL + '/blog/')
   }
 
-  public getBlog(blogId: number): Observable<Blog> {
-    return this.http.get(API_URL + '/blog/' + blogId);
-  }
+  // public getBlog(blogId: number): Observable<Blog> {
+  //   return this.http.get(API_URL + '/blog/' + blogId);
+  // }
 
-  public createBlog(blog: Blog): Observable<Blog> {
-    let body = JSON.stringify(blog);
-    return this.http.post(API_URL + '/blog/', body, httpOptions);
-  }
+  // public createBlog(blog: Blog): Observable<Blog> {
+  //   let body = JSON.stringify(blog);
+  //   return this.http.post(API_URL + '/blog/', body, httpOptions);
+  // }
 
-  public updateBlog(blog: Blog): Observable<Blog> {
-    let body = JSON.stringify(blog);
-    return this.http.put(API_URL + '/blog/' + blog.id, body, httpOptions);
-  }
+  // public updateBlog(blog: Blog): Observable<Blog> {
+  //   let body = JSON.stringify(blog);
+  //   return this.http.put(API_URL + '/blog/' + blog.id, body, httpOptions);
+  // }
 
-  public deleteBlog(blog: Blog): Observable<Blog> {
-    return this.http.delete(API_URL + '/blog/' + blog.id);
-  }
+  // public deleteBlog(blog: Blog): Observable<Blog> {
+  //   return this.http.delete(API_URL + '/blog/' + blog.id);
+  // }
 
 }
 

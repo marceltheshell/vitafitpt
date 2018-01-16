@@ -10,12 +10,7 @@ import { HttpClientService } from '../http-client-service/http-client.service';
 })
 export class BlogComponent implements OnInit {
 
-  ///////////////// api variables
   public blogPosts;
-
-
-
-  /////////////////
 
   mockBlogPosts = MOCKBLOGPOSTS;
 
