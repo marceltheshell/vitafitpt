@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClientService } from '../http-client-service/http-client.service';
+import { Contact } from '../models/contact';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private httpClientService: HttpClientService) { }
 
   ngOnInit() {
+    this.getContacts();
+  }
+
+  getContacts(): void {
+    this.httpClientService.getAllContacts().subscribe(
+      data => { this.contacts = data }, 
+      err => console.error(err)
+    )
   }
 
 }

@@ -1,3 +1,52 @@
-<p>
-  contact-form works!
-</p>
+<div class="container">
+    <section class="main-section contact" id="contact">
+        <div class="row">
+            <h2 style="text-align:center;">Contact</h2>
+            <p class="contact-box-margin-bottom" style="text-align:center;">
+                Interested in our services?  Get in touch with us via the form below and we'll get back to you as soon as possible!
+            </p>
+
+            <div class="col-lg-6 col-sm-7 wow fadeInLeft">
+                <div class="contact-info-box address clearfix">
+                    <h3 class="address-push no-margin-top-bottom pull-left"><i class="fa-map-marker"></i>Address:</h3>
+                    <span class="pull-left">San Francisco & Bay Area</span>
+                </div>
+                <div class="contact-info-box phone clearfix">
+                    <h3 class="phone-push pull-left no-margin-top-bottom"><i class="fa-phone"></i>Phone:</h3>
+                    <span class="pull-left">(415) 697-4133</span>
+                </div>
+                <div class="contact-info-box email clearfix">
+                    <h3 class="email-push no-margin-top-bottom pull-left"><i class="fa-pencil"></i>email:</h3>
+                    <span class="pull-left">mayratn.hall@gmail.com</span>
+                </div>
+                <div class="contact-info-box hours clearfix">
+                    <h3 class="hours-push no-margin-top-bottom pull-left"><i class="fa-clock-o"></i>Hours:</h3>
+                    <span class="pull-left"><strong>Monday - Friday:</strong> 6am - 7pm<br><strong>Saturday:</strong> 6am - 1pm.</span>
+                </div>
+                <ul class="social-link">
+                    <li class="twitter"><a href="https://twitter.com/search?q=mayranatalino"><i class="fa fa-twitter"></i></a></li>
+                    <li class="facebook"><a href="https://www.facebook.com/vitafithealthcoaching/"><i class="fa fa-facebook"></i></a></li>
+                    <li class="pinterest"><a href="https://www.linkedin.com/in/hallmayra"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="gplus"><a href="https://www.instagram.com/vitafit.pt/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a routerLink="/blog" style="background-color:#6312B6;"><img src="/assets/img/blog.png"></a></li>
+                </ul>
+                <div align="center">
+                    <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/js/iframe/setmore_iframe.js"></script>
+                    <a id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/bookingpage/827881f4-5552-4ef3-ae8c-5405a2e6e47a">
+                        <img border="none" src="https://my.setmore.com/images/bookappt/SetMore-book-button.png" alt="Book an appointment using SetMore" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+                <div class="form">
+                    <form method="post" action="?acao=send">
+                        <input class="input-text" type="text" name="nome" placeholder="Your Name *" required>
+                        <input class="input-text" type="email" name="email" placeholder="Your E-mail *" required>
+                        <textarea class="input-text text-area" name="mensagem" cols="0" rows="0" placeholder="Your Message *" required minlength="25"></textarea>
+                        <input class="input-btn" type="submit" value="send message">
+                    </form>
+                </div>  
+            </div>
+        </div>
+    </section>
+</div>
