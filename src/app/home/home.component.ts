@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxCarousel } from 'ngx-carousel';
 import { HttpClientService } from '../http-client-service/http-client.service';
 import { Contact } from '../models/contact';
 import * as $ from 'jquery';

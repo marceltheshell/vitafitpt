@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 
 import { AppComponent } from './app.component';
@@ -40,7 +42,8 @@ const appRoutes: Routes = [
       // { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
-    FormsModule, 
+    FormsModule,
+    NgxCarouselModule,
     HttpClientModule
   ],
   providers: [HttpClientService],

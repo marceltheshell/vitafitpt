@@ -1,61 +1,18 @@
-<section class="no-margin">
-    <div id="main-slider" class="carousel slide wet-asphalt no-margin" data-interval="5000" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-            <li data-target="#main-slider" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active" id="bg1" style="background-image: url(/assets/images/slider/bg1.jpg);">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="carousel-content centered">
-                                <h2 class="animation animated-item-1" style="font-size:4em; text-shadow:2px 2px #333333; ">No matter what your goals are</h2>
-                                <p class="animation animated-item-2" style="font-size:1.5em; text-shadow:1px 1px #333333; ">Vitafit has the right plan for you!</p>
-                                <a class="btn btn-md animation animated-item-3" routerLink="/plans" style="background-color:#4D3581;">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="carousel-content centered">
-                                <h2 class="animation animated-item-1"></h2>
-                                <p class="animation animated-item-2"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-            <div class="item" id="bg2" style="background-image: url(/assets/images/slider/bg2.jpg);">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="carousel-content centered">
-                                <h2 class="animation animated-item-1" style="font-size:4em; text-shadow:2px 2px #333333; ">Health Coaching & Personal training</h2>
-                                <p class="animation animated-item-2" style="font-size:1.5em; text-shadow:1px 1px #333333; ">
-                                It's time to change your life.
-                                We strive to improve you overall health and fitness.
-                                </p>
-                                <a class="btn btn-md animation animated-item-3" href="#about" style="background-color:#4D3581;">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="carousel-content centered">
-                                <h2 class="animation animated-item-1"></h2>
-                                <p class="animation animated-item-2"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-        </div><!--/.carousel-inner-->
-        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-          <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="next hidden-xs" href="#main-slider" data-slide="next">
-          <i class="fa fa-angle-right"></i>
-        </a>
-    </div><!--/.carousel-->
-</section><!--/#main-slider-->
-
+<ngx-carousel
+  [inputs]="carouselOne"
+  (carouselLoad)="myfunc($event)">
+    <ngx-item NgxCarouselItem>
+      ....
+    </ngx-item>
+    <ngx-item NgxCarouselItem>
+      ....
+    </ngx-item>
+    <ngx-item NgxCarouselItem>
+      ....
+    </ngx-item>
+    <button NgxCarouselPrev class='leftRs'>&lt;</button>
+    <button NgxCarouselNext class='rightRs'>&gt;</button>
+</ngx-carousel>
 <section id="about"> <!-- about -->
     <div class="container">
         <div class="row">
