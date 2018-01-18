@@ -1,20 +1,20 @@
-.address-push{
-	margin-right: 48px;
-}
-.phone-push{
-	margin-right: 55px;
-}
-.email-push {
-	margin-right: 59px;
-}
-.hours-push {
-	margin-right: 56px;
-}
-/*.carousel-inner #bg1{
-  background-image: url(/assets/images/slider/bg1.jpg)
+
+li {
+  list-style-type: none;
 }
 
-.carousel-inner #bg2{
-  background-image: url(/assets/images/slider/bg2.jpg)
-}*/
+.address-push{
+  margin-right: 48px;
+}
+.phone-push{
+  margin-right: 55px;
+}
+.email-push {
+  margin-right: 59px;
+}
+.hours-push {
+  margin-right: 56px;
+}
+
+
 
