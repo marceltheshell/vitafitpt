@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxCarousel, NgxCarouselStore } from 'ngx-carousel';
+import 'hammerjs';
 
 @Component({
   selector: 'app-carousel',

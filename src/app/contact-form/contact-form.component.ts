@@ -9,6 +9,8 @@ import { Contact } from '../models/contact';
 })
 export class ContactFormComponent implements OnInit {
 
+  public contacts; 
+
   constructor(private httpClientService: HttpClientService) { }
 
   ngOnInit() {

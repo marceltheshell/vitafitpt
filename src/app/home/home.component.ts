@@ -10,8 +10,6 @@ import * as $ from 'jquery';
 
 export class HomeComponent implements OnInit {
 
-  public contacts;
-
   constructor() {}
 
   ngOnInit() {
