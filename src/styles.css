@@ -73,7 +73,8 @@ hr {
   border-color: rgba(255, 255, 255, 0.5);
 }
 a:hover,
-a:focus {
+a:focus, 
+a:visited {
   color: #d9534f;
   text-decoration: none;
   outline: none;
