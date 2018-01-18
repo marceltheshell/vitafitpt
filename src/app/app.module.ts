@@ -16,6 +16,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HttpClientService } from './http-client-service/http-client.service';
 import { CarouselComponent } from './carousel/carousel.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
     PlansComponent,
     BlogComponent,
     ContactFormComponent,
-    CarouselComponent
+    CarouselComponent,
+    NavbarComponent
   ],
   imports: [
     RouterModule.forRoot(
