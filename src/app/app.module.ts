@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxCarouselModule } from 'ngx-carousel';
+import { CarouselModule } from 'ngx-bootstrap';
+
 import 'hammerjs';
 
 
@@ -41,6 +43,7 @@ const appRoutes: Routes = [
     NavbarComponent
   ],
   imports: [
+    CarouselModule.forRoot(),
     RouterModule.forRoot(
       appRoutes 
       // { enableTracing: true } // <-- debugging purposes only

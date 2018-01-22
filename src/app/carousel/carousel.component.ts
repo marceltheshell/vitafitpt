@@ -52,20 +52,22 @@ import 'hammerjs';
 })
 
 export class CarouselComponent implements OnInit {
-
   public carouselTileItems: Array<any>;
+
   public carouselTile: NgxCarousel;
-
-  constructor() { }
-
-  ngOnInit() {
-    this.carouselTileItems = [0, 1, 2, 3, 4, 5];
+ 
+  ngOnInit(){
+    this.carouselTileItems = [ 
+      '../../assets/images/images/slider/bg1.jpg', 
+      '../../assets/images/images/slider/bg2.jpg'
+    ];
  
     this.carouselTile = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
-      slide: 1,
+      slide: 2,
       speed: 400,
       animation: 'lazy',
+      interval: 4000,
       point: {
         visible: true,
         pointStyles: `
@@ -98,16 +100,20 @@ export class CarouselComponent implements OnInit {
       easing: 'ease'
     }
   }
-
+ 
   public carouselTileLoad(evt: any) {
  
     const len = this.carouselTileItems.length
-    if (len <= 5) {
-      for (let i = len; i < len + 2; i++) {
+    if (len <= 30) {
+      for (let i = len; i < len + 10; i++) {
         this.carouselTileItems.push(i);
       }
     }
  
   }
+ 
+     // carouselLoad will trigger this funnction when your load value reaches
+     // it is helps to load the data by parts to increase the performance of the app
+     // must use feature to all carousel
 
 }
