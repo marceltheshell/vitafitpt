@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { CarouselModule } from 'ngx-bootstrap';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import 'hammerjs';
 
@@ -17,6 +17,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HttpClientService } from './http-client-service/http-client.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -31,13 +32,14 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     AdminComponent,
-    UserProfileComponent,
-    PlansComponent,
     BlogComponent,
+    CarouselComponent,
     ContactFormComponent,
-    NavbarComponent
+    HomeComponent,
+    NavbarComponent,
+    PlansComponent,
+    UserProfileComponent
   ],
   imports: [
     CarouselModule.forRoot(),

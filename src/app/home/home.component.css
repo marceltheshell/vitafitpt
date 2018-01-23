@@ -1,4 +1,4 @@
-li {
+li{
   list-style-type: none;
 }
 .address-push{
@@ -7,11 +7,81 @@ li {
 .phone-push{
   margin-right: 55px;
 }
-.email-push {
+.email-push{
   margin-right: 59px;
 }
-.hours-push {
+.hours-push{
   margin-right: 56px;
+}
+.brand-headers{
+  color:#4C3480;
+  font-weight:bold
+}
+.brand-text{
+  font-size:1.2em;
+}
+.mayra-pic-styles{
+  margin-top: 15px;
+}
+.carousel-h1{
+  text-shadow: 2px 2px #333333;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 25px;
+  left: 100px;
+  animation-name: carousel-h1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.carousel-p{
+  text-shadow: 1px 1px #333333;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 25px;
+  left: 100px;
+  animation-name: carousel-p;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+}
+
+.carousel-button{
+  border-radius: 2px;
+  border-width: 1px;
+  background-color: #4D3581;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 25px;
+  left: 100px;
+  animation-name: carousel-button;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s;
+}
+.carousel-button:hover{
+  transition: all 0.2s ease;
+  background-color: #23183A;
+
+}
+
+@keyframes carousel-h1{
+  from{transform: translateY(250px);}
+  to{transform: translateY(200px);}
+}
+
+@keyframes carousel-p{
+  from{transform: translateY(375px);}
+  to{transform: translateY(270px);}
+}
+
+@keyframes carousel-button{
+  from{transform: translateY(400px);}
+  to{transform: translateY(300px);}
 }
 
 
