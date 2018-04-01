@@ -17,13 +17,20 @@ export class HttpClientService {
 
   constructor(private http: HttpClient) {}
 
-  public getAllContacts(): any {
-    return this.http.get(API_URL + '/contact/')
+  public getAllBlogs(): any {
+    return this.http.get(API_URL + '/blogs/')
   }
 
-  public getAllBlogs(): any {
-    return this.http.get(API_URL + '/blog/')
-  }
+  // public createContact(contact: Contact): Observable<Contact> {
+  //   let body = JSON.stringify(contact);
+  //   return this.http.post(API_URL + '/contacts/', body, httpOptions);
+  // }
+
+  // make routes for:
+  // POST /contact
+  // POst /blog
+  // PUT /blog
+  // Delete /blog
 
   // public getBlog(blogId: number): Observable<Blog> {
   //   return this.http.get(API_URL + '/blog/' + blogId);

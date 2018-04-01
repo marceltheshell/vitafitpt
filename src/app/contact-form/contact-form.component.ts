@@ -7,21 +7,33 @@ import { Contact } from '../models/contact';
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.css']
 })
-export class ContactFormComponent implements OnInit {
 
-  public contacts; 
+export class ContactFormComponent {
+
+  public model = new Contact(
+    "", 
+    "", 
+    "", 
+    ""
+  );
+
+  submitted = false;
+
+  onSubmit() { this.submitted = true; }
+
+  get diagnostic() { return JSON.stringify(this.model); }
 
   constructor(private httpClientService: HttpClientService) { }
 
   ngOnInit() {
-    this.getContacts();
+    // this.getContacts();
   }
 
-  getContacts(): void {
-    this.httpClientService.getAllContacts().subscribe(
-      data => { this.contacts = data }, 
-      err => console.error(err)
-    )
-  }
+  // getContacts(): void {
+  //   this.httpClientService.getAllContacts().subscribe(
+  //     data => { this.contacts = data }, 
+  //     err => console.error(err)
+  //   )
+  // }
 
 }
