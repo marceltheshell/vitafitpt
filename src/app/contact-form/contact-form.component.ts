@@ -30,7 +30,7 @@ export class ContactFormComponent {
   }
 
   postContact(): void {
-    this.httpClientService.createContact().subscribe(
+    this.httpClientService.createContact(this.model).subscribe(
       data => { this.model = data }, 
       err => console.error(err)
     )

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'environments/environment';
 import { BlogPost } from '../models/blogPost';
+import { Contact } from '../models/contact';
 import { Observable } from 'rxjs/Rx';
 
 const API_URL = environment.apiUrl;
@@ -21,7 +22,7 @@ export class HttpClientService {
     return this.http.get(API_URL + '/blogs/')
   }
 
-  public createContact(contact: Contact): Observable<Contact> {
+  public createContact(contact: Contact): any {
     let body = JSON.stringify(contact);
     return this.http.post(API_URL + '/contacts/', body, httpOptions);
   }
