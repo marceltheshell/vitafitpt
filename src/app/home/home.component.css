@@ -24,6 +24,7 @@ li{
   margin-top: 15px;
 }
 .carousel-h1{
+  font-size:4em;
   text-shadow: 2px 2px #333333;
   position: absolute;
   z-index: 1;
@@ -37,6 +38,7 @@ li{
 }
 
 .carousel-p{
+  font-size:1.5em;
   text-shadow: 1px 1px #333333;
   position: absolute;
   z-index: 1;
