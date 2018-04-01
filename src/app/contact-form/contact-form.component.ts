@@ -19,7 +19,9 @@ export class ContactFormComponent {
 
   submitted = false;
 
-  onSubmit() { this.submitted = true; }
+  onSubmit() { 
+    this.submitted = true; 
+  }
 
   get diagnostic() { return JSON.stringify(this.model); }
 
