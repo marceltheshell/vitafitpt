@@ -21,10 +21,10 @@ export class HttpClientService {
     return this.http.get(API_URL + '/blogs/')
   }
 
-  // public createContact(contact: Contact): Observable<Contact> {
-  //   let body = JSON.stringify(contact);
-  //   return this.http.post(API_URL + '/contacts/', body, httpOptions);
-  // }
+  public createContact(contact: Contact): Observable<Contact> {
+    let body = JSON.stringify(contact);
+    return this.http.post(API_URL + '/contacts/', body, httpOptions);
+  }
 
   // make routes for:
   // POST /contact

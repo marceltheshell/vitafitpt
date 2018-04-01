@@ -11,10 +11,10 @@ import { Contact } from '../models/contact';
 export class ContactFormComponent {
 
   public model = new Contact(
-    "", 
-    "", 
-    "", 
-    ""
+    "Joshy", 
+    "Washles", 
+    "joshy@washles.com", 
+    "I love my wifey!"
   );
 
   submitted = false;
@@ -29,7 +29,14 @@ export class ContactFormComponent {
     // this.getContacts();
   }
 
-  // getContacts(): void {
+  postContact(): void {
+    this.httpClientService.createContact().subscribe(
+      data => { this.model = data }, 
+      err => console.error(err)
+    )
+  }
+
+   // getContacts(): void {
   //   this.httpClientService.getAllContacts().subscribe(
   //     data => { this.contacts = data }, 
   //     err => console.error(err)

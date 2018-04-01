@@ -54,10 +54,10 @@
             </div>
             <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
                 <div class="form">
-                    {{ diagnostic }}
                     <form>
                         <div class="form-group">
                             <input class="input-text" type="text" id="first_name" placeholder="First name" [(ngModel)]="model.first_name" name="first_name" required>
+
                         </div>
                         <div class="form-group">
                             <input class="input-text" type="text" id="last_name" placeholder="Last name" [(ngModel)]="model.last_name" name="last_name" required>
@@ -68,7 +68,7 @@
                         <div class="form-group">
                             <textarea class="input-text text-area" id="message" cols="0" rows="0" placeholder="Message" [(ngModel)]="model.message" name="message" required minlength="15"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="submit" class="btn btn-success" (click)="postContact()">Submit</button>
                         <!-- <input class="input-btn" type="submit" value="send message"> -->
                     </form>
                 </div>  
