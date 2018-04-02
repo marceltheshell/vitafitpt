@@ -10,12 +10,7 @@ import { Contact } from '../models/contact';
 
 export class ContactFormComponent {
 
-  public model = new Contact(
-    "Joshy", 
-    "Washles", 
-    "joshy@washles.com", 
-    "I love my wifey!"
-  );
+  public model = new Contact("" ,"", "", "");
 
   submitted = false;
 

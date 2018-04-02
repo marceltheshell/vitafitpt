@@ -1,6 +1,6 @@
-import { BlogPost } from './models/blogPost';
+import { Blog } from './models/blog';
 
-export const MOCKBLOGPOSTS: BlogPost[] = [
+export const MOCKBLOGPOSTS: Blog[] = [
 	{
 		id: 1,
 		title:"My First",

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MOCKBLOGPOSTS } from '../blog-posts';
-import { BlogPost } from '../models/blogPost';
+import { Blog } from '../models/blog';
 import { HttpClientService } from '../http-client-service/http-client.service';
 
 @Component({
@@ -16,7 +16,7 @@ export class BlogComponent implements OnInit {
 
   selectedBlogPost: BlogPost;
 
-  onSelect = function(mockBlogPost: BlogPost): void {
+  onSelect = function(mockBlogPost: Blog): void {
     this.selectedBlogPost = mockBlogPost;
   }; 
 
