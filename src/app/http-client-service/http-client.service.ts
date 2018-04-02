@@ -26,7 +26,7 @@ export class HttpClientService {
   //   return this.http.get(API_URL + '/blog/' + blogId);
   // }
 
-  public createBlog(blog: Blog): Observable<Blog> {
+  public createBlog(blog: Blog): any {
     let body = JSON.stringify(blog);
     return this.http.post(API_URL + '/blog/', body, httpOptions);
   }
@@ -40,10 +40,10 @@ export class HttpClientService {
   //   return this.http.delete(API_URL + '/blog/' + blog.id);
   // }
 
-  // public createContact(contact: Contact): any {
-  //   let body = JSON.stringify(contact);
-  //   return this.http.post(API_URL + '/contacts/', body, httpOptions);
-  // }
+  public createContact(contact: Contact): any {
+    let body = JSON.stringify(contact);
+    return this.http.post(API_URL + '/contacts/', body, httpOptions);
+  }
 
 }
 
